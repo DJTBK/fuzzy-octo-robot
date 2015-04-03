@@ -13,7 +13,7 @@
     "ssh_username": "ec2-user",
     "ami_name": "website {{timestamp}}",
     "vpc_id": "vpc-11875474",
-    "subnet_id": "subnet-subnet-efd5b5d5"
+    "subnet_id": "subnet-efd5b5d5"
   }],
   "provisioners" : [{
     "type": "chef-solo",
