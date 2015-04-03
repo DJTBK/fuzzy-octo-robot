@@ -10,8 +10,8 @@
             "Instances" : [
                 { "Ref" : "jenkins1" }
             ],
-            "SecurityGroups" : [ "sg-8ba1a5ee", "sg-a0caaac4" ],
-            "Subnets"       : [ "subnet-d99631ae" ],
+            "SecurityGroups" : [ "sg-1793d572", "sg-886705ed" ],
+            "Subnets"       : [ "subnet-efd5b5d5" ],
             "Listeners" : [ {
                 "LoadBalancerPort" : "80",
                 "InstancePort" : "8080",
@@ -25,9 +25,9 @@
         "Tags": [ { "Key" : "Name", "Value": "jenkins1" } ],
         "ImageId" : "ami-1ecae776",
         "InstanceType"   : "t2.micro",
-        "SecurityGroupIds" : [ "sg-8ba1a5ee", "sg-a0caaac4" ],
-        "SubnetId"       : "subnet-d99631ae",
-        "KeyName"        : "jaymz",
+        "SecurityGroupIds" : [ "sg-1793d572", "sg-886705ed" ],
+        "SubnetId"       : "subnet-efd5b5d5",
+        "KeyName"        : "EC2Keypair",
         "UserData" : {"Fn::Base64" : {"Fn::Join" : ["", [
             "#!/bin/bash\n",
             "# update everything \n",
@@ -65,4 +65,3 @@
     }
   }
 }
-
