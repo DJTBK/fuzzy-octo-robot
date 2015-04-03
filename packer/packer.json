@@ -12,8 +12,8 @@
     "instance_type": "t2.micro",
     "ssh_username": "ec2-user",
     "ami_name": "website {{timestamp}}",
-    "vpc_id": "vpc-1b3fb97e",
-    "subnet_id": "subnet-d99631ae"
+    "vpc_id": "vpc-11875474",
+    "subnet_id": "subnet-subnet-efd5b5d5"
   }],
   "provisioners" : [{
     "type": "chef-solo",
