@@ -52,7 +52,7 @@
             "Properties": {
                 "ImageId": { "Ref": "amiID" },
                 "InstanceType": "t2.micro",
-                "KeyName": "jaymz",
+                "KeyName": "EC2Keypair",
             	"SecurityGroups" : [ "sg-1793d572", "sg-886705ed" ]
             }
         }
